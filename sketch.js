@@ -4,37 +4,32 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
-function preload()
-{
-	
-}
-
 function setup() {
-	createCanvas(800, 700);
-
-	crumpleBall= new Paper(200,600,10,10);
-	crumpleBall.shapecolor="pink";
+	createCanvas(800,1000);
 
 	engine = Engine.create();
 	world = engine.world;
 
-	//Create the Bodies Here.
-
-
+	crumpleBall= new Paper(250,800,20);
+	
 	Engine.run(engine);
-  
+
 }
 
 
 function draw() {
-  rectMode(CENTER);
-  background("black");
-  
+  background(255,255,255);
+
 crumpleBall.display();
 
+keyPressed();
+
   drawSprites();
- 
+
 }
 
+function keyPressed() {
+	//write code here
+	
 
-
+}
