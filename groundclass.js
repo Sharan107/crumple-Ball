@@ -11,6 +11,7 @@ class Ground{
     this.height=15;
 
     this.body=Bodies.rectangle(x,y,1000,10,options);
+    World.add(world,this.body);
 
    }
   
