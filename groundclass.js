@@ -1,17 +1,27 @@
-class ground{
-constructor(x,y,width,height) {
-    var options = {
-    isStatic: true
+class Ground{
+   constructor(x,y){
+
+    var options={
+        isStatic:true
     }
-    this.body = Bodies.rectangle(x,y,width,height,options);
-    this.width = width;
-    this.height = height;
-    World.add(world, this.body);
-      }
-    display(){
-    var pos =this.body.position;
+
+    this.x=x;
+    this.y=y;
+    this.width=1000;
+    this.height=15;
+
+    this.body=Bodies.rectangle(x,y,1000,10,options);
+
+   }
+  
+   display(){
+  
+    var pos=this.body.position;
+     
+    push()
     rectMode(CENTER);
-    fill("brown");
-    rect(pos.x, pos.y, this.width, this.height);
-    }
+    fill("yellow");
+    rect(pos.x,pos.y,this.width,this.height);
+    pop()
+   }
 }
