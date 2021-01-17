@@ -12,11 +12,11 @@ function setup() {
 
 	ground= new Ground(500,450);
 
-	crumpleBall= new Paper(200,417,50);
+	crumpleBall= new Paper(150,417,50);
 
-	dustbinBase= new Dustbin(700,434,230,15);
-	dustbinWall= new Dustbin(580,385,15,100);
-	dustbinWall2= new Dustbin(815,385,15,100);
+	dustbinBase= new Dustbin(750,434,170,15);
+	dustbinWall= new Dustbin(665,385,15,100);
+	dustbinWall2= new Dustbin(835,385,15,100);
 
 	
 	Engine.run(engine);
@@ -42,7 +42,7 @@ keyPressed();
 function keyPressed() {
 	//write code here
 	
-   if(keyWentDown("UP_ARROW")){
-     Body.applyForce(crumpleBall.body,crumpleBall.body.position,{x:85,y:-85});
+   if(keyCode===UP_ARROW){
+	 Body.applyForce(crumpleBall.body,crumpleBall.body.position,{x:3,y:-7});
    }
 }
