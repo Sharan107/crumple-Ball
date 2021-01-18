@@ -12,7 +12,7 @@ function setup() {
 
 	ground= new Ground(500,450);
 
-	crumpleBall= new Paper(150,417,50);
+	crumpleBall= new Paper(100,417,50);
 
 	dustbinBase= new Dustbin(750,434,170,15);
 	dustbinWall= new Dustbin(665,385,15,100);
