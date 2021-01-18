@@ -33,8 +33,6 @@ dustbinBase.display();
 dustbinWall.display();
 dustbinWall2.display();
 
-keyPressed();
-
   drawSprites();
 
 }
@@ -43,6 +41,6 @@ function keyPressed() {
 	//write code here
 	
    if(keyCode===UP_ARROW){
-	 Body.applyForce(crumpleBall.body,crumpleBall.body.position,{x:3,y:-7});
+	 Body.applyForce(crumpleBall.body,crumpleBall.body.position,{x:100,y:-150});
    }
 }
