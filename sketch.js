@@ -1,4 +1,3 @@
-
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -14,9 +13,9 @@ function setup() {
 
 	crumpleBall= new Paper(100,417,50);
 
-	dustbinBase= new Dustbin(750,434,170,15);
-	dustbinWall= new Dustbin(665,385,15,100);
-	dustbinWall2= new Dustbin(835,385,15,100);
+	dustbinBase= new Dustbin(790,434,170,15);
+	dustbinWall= new Dustbin(705,385,15,100);
+	dustbinWall2= new Dustbin(878,385,15,100);
 
 	
 	Engine.run(engine);
@@ -41,6 +40,6 @@ function keyPressed() {
 	//write code here
 	
    if(keyCode===UP_ARROW){
-	 Body.applyForce(crumpleBall.body,crumpleBall.body.position,{x:100,y:-150});
+	 Body.applyForce(crumpleBall.body,crumpleBall.body.position,{x:100,y:-140});
    }
 }

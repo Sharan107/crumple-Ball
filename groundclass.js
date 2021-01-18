@@ -7,7 +7,7 @@ class Ground{
 
     this.x=x;
     this.y=y;
-    this.width=1000;
+    this.width=1800;
     this.height=15;
 
     this.body=Bodies.rectangle(x,y,1000,10,options);
